@@ -44,8 +44,9 @@
         height: 5.4cm;
         border-radius: 15px;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-        background: linear-gradient(135deg, #fddede, #f9c5c5);
-        padding: 12px;
+        background: url('https://th.bing.com/th/id/OIP.of47jfGmGdG0H1VwD18r8AHaD0?w=321&h=179&c=7&r=0&o=5&pid=1.7');
+        filter: brightness(1.2);
+        padding: 8px;
         box-sizing: border-box;
         position: relative;
         display: flex;
@@ -59,11 +60,11 @@
       .heading {
         text-align: center;
         font-family: "Baloo 2", cursive;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: bold;
         margin-bottom: 8px;
         color: #fff;
-        background: #c70032;
+        background: #ff0000;
         padding: 8px 0 8px 0;
         border-radius: 10px 10px 0 0;
         letter-spacing: 1px;
@@ -106,7 +107,7 @@
       }
       .info {
         flex-grow: 1;
-        padding-left: 8px;
+        padding-left: 1px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -117,15 +118,24 @@
       }
       .info span {
         font-weight: bold;
-        color: #8e0e00;
+        color: #000000;
       }
       .qr-code {
         position: absolute;
         bottom: 12px;
         right: 12px;
         background: #fff;
-        padding: 3px;
+        padding: 2px;
         border-radius: 5px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .qr-code canvas {
+        width: 56px !important;
+        height: 56px !important;
       }
       button {
         margin: 5px;
